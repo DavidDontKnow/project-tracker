@@ -38,14 +38,62 @@
 				</ul>
 			</div>
 			<div class="d-grid  py-2 gap-2 col-6 mx-auto">
-				<button class="btn btn-primary" type="button">Add Project</button>
+				<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button"
+					id="addProject">Add Project</button>
 			</div>
 		</div>
 	</header>
 
 	<main>
 
+		<!-- Modal -->
+		<div class="modal fade bg-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">Add Project</h1>
 
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="modal-body">
+							<div class="mb-3">
+								<label for="project-name-input">Project Name</label>
+								<input type="text" id="project-name-input" class="form-control"
+									placeholder="Enter the project's name" required />
+							</div>
+							<div class="mb-3">
+								<label for="project-type-input" class="form-label">Project Type</label>
+								<select id="project-type-input" class="form-select">
+									<option value="Web Application (Front End)">
+										Web Application (Front End)
+									</option>
+									<option value="Web Application (Back End)">
+										Web Application (Back End)
+									</option>
+									<option value="Web Application (Full Stack)">
+										Web Application (Full Stack)
+									</option>
+									<option value="Mobile Application">Mobile Application</option>
+									<option value="Print Campaign">Print Campaign</option>
+									<option value="Digital Marketing Campaign">
+										Digital Marketing Campaign
+									</option>
+								</select>
+							</div>
+							<div class="mb-3">
+								<label for="project-date-input">Due Date</label>
+								<input type="date" id="project-date-input" class="form-control" required />
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
 
